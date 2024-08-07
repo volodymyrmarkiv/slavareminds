@@ -3,12 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tweet Style Text</title>
+    <title>Slava Reminds Us - Пам'ятай про донати</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="info-block">
+        <p><strong>&#128680; Slava Reminds Us</strong> - це гуморний проєкт, який нагадує про цілком серйозні речі, а саме про те, що ваші донати - це прямий шлях до перемоги &#127482;&#127462; України у війні з &#127479;&#127482; російскою ордою.</p>
+        <p>Як користуватись: просто вписуй місто і область нашого ворога та роби скріншоти, а далі нагадуй про донати або просто залишай лінк на цю сторінку, бо тут унизу найпопулярніші фонди, які працюють на перемогу &#127482;&#127462; України.</p>
+    </div>
     <div class="tweet">
-        <p lang="ru" class="tweet-text">Ваш каждый донат ВСУ — это оплата потенциальной смерти моей семьи и моих друзей в <input type="text" placeholder="Белгороде" oninput="resizeInput(this); checkInput(this)" value=""> и <input type="text" placeholder="Белгородской" oninput="resizeInput(this); checkInput(this)" value=""> области.</p>
+        <div class="tweet-header">
+            <img src="mediaslava.jpg" alt="Image description" class="tweet-image">
+            <div class="tweet-header-content">
+                <span class="tweet-handle"><strong>слава</strong></span>
+                <span class="tweet-handle">@mediaslava</span>
+            </div>
+            <button class="follow-button">Follow</button>
+        </div>
+        <p lang="ru" class="tweet-text">Ваш каждый донат ВСУ — это оплата потенциальной смерти моей семьи и моих друзей в <input type="text" placeholder="Белгороде" oninput="resizeInput(this); checkInput(this)" value=""> и <input type="text" placeholder="Белгородской" oninput="resizeInput(this); checkInput(this)" value=""> области.
+        </p>
     </div>
     <script src="script.js"></script>
 </body>

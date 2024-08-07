@@ -18,8 +18,19 @@ function checkInput(input) {
     }
 }
 
-// Initialize input widths and colors on page load
-document.querySelectorAll('input').forEach(input => {
-    resizeInput(input);
-    checkInput(input);
+document.addEventListener("DOMContentLoaded", function() {
+    // Select all input elements
+    var inputs = document.querySelectorAll('input[type="text"]');
+
+    // Iterate over each input element to reset and resize
+    inputs.forEach(function(input) {
+        // Set the value to the default value from data-default attribute
+        input.value = input.getAttribute('data-default');
+        resizeInput(input);
+        checkInput(input);
+    });
+
+    document.querySelector('.follow-button').addEventListener('click', function() {
+        alert('Follow button clicked!');
+    });
 });
