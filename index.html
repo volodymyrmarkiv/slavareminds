@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slava Reminds Us - Пам'ятай про донати</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/footer.css">
 </head>
+
 <body>
     <button class="spoiler-button" onclick="toggleSpoiler()">Про проєкт</button>
     <div class="spoiler-content" style="display: none;">
-        <p><strong>&#128680;Slava Reminds Us</strong> - це гуморний проєкт, який нагадує про цілком серйозні речі, а саме про те, що ваші донати - це прямий шлях до перемоги &#127482;&#127462;України у війні з &#127479;&#127482;російскою ордою, яка тримває вже більше ніж три століття. Разом переможумо і Слава Україні!</p>
-        <p><i>Інструкція: просто вписуй місто і область нашого ворога та роби скріншоти, а далі нагадуй про донати або просто залишай лінк на цю сторінку, бо тут унизу найпопулярніші фонди, які працюють на перемогу &#127482;&#127462; України.</i></p>
+        <p><strong>&#128227;Slava Says Us</strong> - це гуморний проєкт, який повторює популярну гру "Simon Says" та
+            нагадує про цілком серйозні речі, а саме про те, що ваші пожертви - це прямий шлях до перемоги
+            &#127482;&#127462;України у війні з &#127479;&#127482;російскою ордою, яка тримває вже більше ніж три
+            століття. Разом переможемо. Слава Україні!</p>
+        <p><i>Інструкція: просто вписуй місто і область нашого ворога та роби скріншоти, а далі нагадуй про донати або
+                просто залишай лінк на цю сторінку, бо хтось таки тай натисне на кнопку Follow, а там... Найпопулярніші
+                фонди, які працюють на перемогу &#127482;&#127462;України.</i></p>
     </div>
     <div class="tweet">
         <div class="tweet-header">
@@ -21,10 +29,18 @@
             </div>
             <button class="follow-button">Follow</button>
         </div>
-        <p lang="ru" class="tweet-text">Ваш каждый донат ВСУ — это оплата потенциальной смерти моей семьи и моих друзей в <input type="text" placeholder="Белгороде" oninput="resizeInput(this); checkInput(this)" value=""> и <input type="text" placeholder="Белгородской" oninput="resizeInput(this); checkInput(this)" value=""> области.
-        </p>
+        <p lang="ru" class="tweet-text">Ваш каждый донат ВСУ — это оплата потенциальной смерти моей семьи и моих друзей в <input type="text" placeholder="Белгороде" oninput="resizeInput(this); checkInput(this)" value=""> и <input type="text" placeholder="Белгородской" oninput="resizeInput(this); checkInput(this)" value=""> области.</p>
         <p class="tweet-time"></p>
     </div>
     <script src="script.js"></script>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Слава каже. Всі права захищені.</p>
+            <div class="footer-links">
+                <a href="https://slavasays.us">Slava Says</a> | <a href="https://github.com/">Github</a>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
