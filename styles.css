@@ -8,7 +8,23 @@ body {
     padding: 20px;
 }
 
-.info-block {
+.spoiler-button {
+    background-color: #1da1f2;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.spoiler-button:hover {
+    background-color: #0d95e8;
+}
+
+.spoiler-content {
+    display: none;
     width: 100%;
     max-width: 500px;
     margin-bottom: 20px;
@@ -17,7 +33,6 @@ body {
     border: 1px solid #e1e8ed;
     border-radius: 10px;
     background-color: #f5f8fa;
-    /* text-align: center; */
     text-align: justify;
     font-size: 16px;
     line-height: 1.5;
@@ -98,4 +113,10 @@ input:focus {
 
 input::placeholder {
     color: grey;
+}
+
+.tweet-time {
+    font-size: 14px;
+    color: #657786;
+    margin-top: 10px;
 }
